@@ -27,12 +27,13 @@ namespace brainblobbermain
             Console.WriteLine($"4: {Question.Topics.SuperHeroes}");
             Console.WriteLine($"5: {Question.Topics.Movies_TVshows}");
             int choice = Convert.ToInt32(Console.ReadLine());
-           
-            while  (choice == 1)
+
+            while (choice == 1)
             {
                 Console.WriteLine($"You chose the topic {Question.Topics.VideoGames}");
                 choice++;
-                return 
+
+            }
         }
 
     }

@@ -1,14 +1,26 @@
 [
     {
         "id": 1,
-        "topic": "VideoGames",
-        "Questions": {
-            "1": "Which game system has a character named mario",
-                "choices": {
-
-                }
-        }
+        "Topics": "VideoGames",
+        "Questions": [
+            {
+                "1": "Which game system has a character named mario",
+                    "Choices": [
+                        {
+                            "a": "Nintendo"
+                        },
+                        {
+                            "b": "Playstation"
+                        }
+                    ],
+                        "CorrectAnswer": "a"
+                },
+            {
+                "2":  "What was the fighting game created in 1987 called?"
+            }
+        ] 
     },
+    
     {
         "id": 2,
         "Name": "PopCulture"
