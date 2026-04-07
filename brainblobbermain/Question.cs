@@ -10,8 +10,8 @@ namespace brainblobbermain
 {
     internal class Question
     {
-        string question_topic; 
-        int correct_answer;
+        int id;
+        int topic;
        
         public enum Topics : int
         {

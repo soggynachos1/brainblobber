@@ -1,10 +1,22 @@
-{
-  "exclude": [
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
-  ]
-}
+[
+    {
+        "Id": 1,
+        "topic": "VideoGames"
+    },
+    {
+        "Id": 2,
+        "Name": "PopCulture"
+    },
+    {
+        "Id": 3,
+        "Name": "Music"
+    },
+    {
+        "Id": 4,
+        "Name": "SuperHeroes"
+    },
+    {
+        "Id": 5,
+        "Name": "Movies_TVshows"
+    }
+]
