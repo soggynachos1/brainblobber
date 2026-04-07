@@ -1,22 +1,28 @@
 [
     {
-        "Id": 1,
-        "topic": "VideoGames"
+        "id": 1,
+        "topic": "VideoGames",
+        "Questions": {
+            "1": "Which game system has a character named mario",
+                "choices": {
+
+                }
+        }
     },
     {
-        "Id": 2,
+        "id": 2,
         "Name": "PopCulture"
     },
     {
-        "Id": 3,
+        "id": 3,
         "Name": "Music"
     },
     {
-        "Id": 4,
+        "id": 4,
         "Name": "SuperHeroes"
     },
     {
-        "Id": 5,
+        "id": 5,
         "Name": "Movies_TVshows"
     }
 ]

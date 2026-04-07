@@ -32,7 +32,7 @@ namespace brainblobbermain
             {
                 Console.WriteLine($"You chose the topic {Question.Topics.VideoGames}");
                 choice++;
-            }
+                return 
         }
 
     }
