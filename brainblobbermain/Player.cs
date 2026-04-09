@@ -12,28 +12,48 @@ namespace brainblobbermain
         /// <summary>
         /// Initialize attributes/fields
         /// </summary>
-        public string name;
-        public int current_score;
-        public int no_of_correct;
+        private string name;
+        private int currentScore;
+        private int numOfCorrect;
 
-        /// <summary>
-        /// listing some methods for this class
-        /// </summary>
-        public void get_Name()
+        //constructor player (name of class followed by info needed to create itself)
+        public Player(string playerName, int score = 0, int correct = 0)
         {
-            Console.WriteLine("Enter your name: ");
-            name = Console.ReadLine();
-            Console.WriteLine();
-            Console.WriteLine($"Hello, {name}");
-        }
-        public void current_Score()
-        {
-            int score = 0;
-            Console.WriteLine();
-            Console.WriteLine($"Your current score is: {score}");
+            name = playerName;
+            currentScore = score;
+            numOfCorrect = correct;
 
         }
 
+       ///when name is initialized returns name....
+        public string GetName()
+        {
+            return name;
+        }
+        public void SetName(string playerName)
+        {
+            name = playerName;
+        }
+
+        public int GetCurrentScore()
+        {
+            return currentScore;
+        }
+
+        public void SetCurrentScore(int score)
+        {
+            currentScore = score;
+        }
+
+        public int GetNumOfCorrect()
+        {
+            return numOfCorrect;
+        }
+
+        public void SetNumOfCorrect(int correct)
+        {
+            numOfCorrect = correct;
+        }
     }
 }
 

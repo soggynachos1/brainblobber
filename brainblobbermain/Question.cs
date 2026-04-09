@@ -10,12 +10,27 @@ namespace brainblobbermain
 {
     internal class Question
     {
-        int id;
-        int topic;
-       
-        public enum Topics : int
+        private int id; // make all private
+        private Topics topic;
+        public string question;
+        private List<string> answers;
+        private int correctAnswer; // starts at 0
+
+        public Question(int id, Topics topic, string question, 
+            List<string> answers, int correctAnswer)
         {
-            VideoGames = 1, PopCulture = 2, Music = 3, SuperHeroes = 4, Movies_TVshows = 5
+            this.id = id;
+            this.topic = topic;
+            this.question = question;
+            this.answers = answers;
+            this.correctAnswer = correctAnswer;
+        }
+
+        // TODO: add getter and setter for each field
+       
+        public enum Topics 
+        {
+            VideoGames = 1, PopCulture = 2, Music = 3, SuperHeroes = 4, Movies_TVshows = 5, Math = 6
 
         }
 
