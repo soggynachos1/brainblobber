@@ -16,21 +16,21 @@ namespace brainblobbermain
             1,
             Question.Topics.VideoGames,
             "Which game system is known to have a character named Mario?",
-            new List<string> { "Nintendo", "Playstation", "Xbox", "Wii"},
-            0
+            new List<string> { "Playstation", "Nintendo", "Xbox", "Sega"},
+            1
             );
         static Question q2 = new Question(
             2,
             Question.Topics.VideoGames,
             "What was the popular fighting game created in 1987 called??",
-            new List<string> { "Mortal Combat", "Street Fighter", "Tekken", "Super Smash Bros" },
+            new List<string> { "Mortal Combat", "Tekken", "Street Fighter", "Super Smash Bros" },
             1
             );
 
 
         public static string GetName()
         {
-            Console.WriteLine("Enter your name: ");
+            Console.WriteLine("Enter your player name: ");
             string name = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine($"Hello, {name}");
@@ -42,7 +42,9 @@ namespace brainblobbermain
         public static void Main(string[] args)
         {
             int choice;
-            Console.WriteLine("Welcome to the Trivia Game!");
+
+            string soloButtonStart = "Welcome to BrainBlobber - Solo Mode!";
+            Console.WriteLine(soloButtonStart);
 
             //instantiate player object . . . 
 
@@ -60,7 +62,16 @@ namespace brainblobbermain
             }
 
             if (choice == 1)
+            {
+                Console.WriteLine($"You have chosen the category Video Games! ");
+                Console.WriteLine("Lets begin . . .");
+                Console.WriteLine();
                 Console.WriteLine(q1.question);
+
+               
+
+            }
+            
         }
 
     }
