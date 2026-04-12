@@ -11,7 +11,8 @@ namespace brainblobbermain
    
     public class Program
     {
-
+//----add dicitonary list to hold all of the questions
+//
         static Question q1 = new Question(
             1,
             Question.Topics.VideoGames,
