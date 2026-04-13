@@ -42,7 +42,9 @@ namespace brainblobbermain
 
         public void SetCurrentScore(int score)
         {
+            
             currentScore = score;
+            currentScore += 10;
         }
 
         public int GetNumOfCorrect()

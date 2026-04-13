@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 
 namespace brainblobbermain
@@ -16,18 +17,74 @@ namespace brainblobbermain
         private List<string> answers;
         private int correctAnswer; // starts at 0
 
-        public Question(int id, Topics topic, string question, 
-            List<string> answers, int correctAnswer)
+        //Constructor of Question
+        public Question(int CurrentId, Topics CurrentTopic, string CurrentQuestion, 
+            List<string> CurrentAnswers, int CurrentCorrectAnswer)
         {
-            this.id = id;
-            this.topic = topic;
-            this.question = question;
-            this.answers = answers;
-            this.correctAnswer = correctAnswer;
+            id = CurrentId;
+            topic = CurrentTopic;
+            question = CurrentQuestion;
+            answers = CurrentAnswers;
+            correctAnswer = CurrentCorrectAnswer;
         }
 
-        // TODO: add getter and setter for each field
-       
+        //getter and setter for all attributes
+        public int GetId()
+        {
+            return id;
+        }
+
+        public void SetId(int CurrentId)
+        {
+            id = CurrentId;
+        }
+        public Topics GetTopic()
+        {
+        return topic;
+        }
+        public void SetTopic(Topics CurrentTopic)
+        {
+        topic = CurrentTopic;
+        }
+
+        public string GetQuestion()
+        {
+            return question;
+        }
+        public void SetQuestion(string CurrentQuestion)
+        {
+            question = CurrentQuestion;
+        }
+
+        public List<string> GetAnswers()
+        {
+         
+           foreach (var item in answers)
+            {
+              Console.WriteLine(item);
+            }
+        return null;
+            
+        }
+
+        public void SetAnswers(List<string> CurrentAnswers)
+        {
+            answers = CurrentAnswers;
+        }
+
+        public int GetCorrectAnswer()
+        {
+            
+            return correctAnswer;
+        }
+
+        public void SetCorrectAnswer(int CurrentCorrectAnswer)  //remember this starts at 0...
+        {
+            correctAnswer = CurrentCorrectAnswer;
+        }
+
+
+        //listed enum topics
         public enum Topics 
         {
             VideoGames = 1, PopCulture = 2, Music = 3, SuperHeroes = 4, Movies_TVshows = 5, Math = 6
