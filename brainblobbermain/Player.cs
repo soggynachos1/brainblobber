@@ -42,10 +42,24 @@ namespace brainblobbermain
 
         public void SetCurrentScore(int score)
         {
-            
+
             currentScore = score;
-            currentScore += 10;
         }
+
+        //these two methods are for keeping track of the user
+        //score and adding if they got it right
+        public void AddToCurrentScore(int points)
+        {
+            currentScore += points;
+        }
+
+        public void AddCorrect()
+        {
+            AddToCurrentScore(10);
+            numOfCorrect++;
+        }
+
+
 
         public int GetNumOfCorrect()
         {
