@@ -8,6 +8,8 @@ namespace brainblobbermain
 {
     internal class ListQuestions
     {
+
+        //ALL THE VIDEO GAME QUESTIONS
         public static Question q1 = new Question(
            1,
            Question.Topics.VideoGames,
@@ -47,6 +49,8 @@ namespace brainblobbermain
            new List<string> { "1: Eggman", "2: Wario", "3: Waluigi", "4: Toad" },
            2
            );
+
+        //All the 
 
     }
 }
