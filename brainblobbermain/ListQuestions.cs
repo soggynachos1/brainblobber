@@ -28,8 +28,8 @@ namespace brainblobbermain
         public static Question q3 = new Question(
            3,
            Question.Topics.VideoGames,
-           "1. What 1997 N64 video game, widely cited as one of the greatest of all time, features James Bond up" 
-            + "against a criminal syndicate and is named after the 1995 film in the Bond franchise?",
+           "1. What 1997 N64 video game features James Bond up against a" +
+            " criminal syndicate and is named after the 1995 film in the Bond franchise?",
            new List<string> { "1: GoldFinger", "2: SkyFall ", "3: NightFire", "4: Golden Eye" },
            3
            );
