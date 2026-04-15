@@ -109,13 +109,13 @@ namespace brainblobbermain
 
                     if (answer_two == 1 || answer_two == 2 || answer_two == 4)
                     {
-                        Console.WriteLine("Incorrect! The answer was Nintendo");
+                        Console.WriteLine("Incorrect! The answer was Street Fighter");
                         Console.WriteLine("On to the next question . . .");
                         playerOne.GetCurrentScore();
                     }
                     else if (answer_two == 3)
                     {
-                        Console.WriteLine("Correct! The answer is Nintendo!");
+                        Console.WriteLine("Correct! The answer is Street Fighter");
                         Console.WriteLine("Next question.");
                         playerOne.AddCorrect();
 
@@ -204,6 +204,106 @@ namespace brainblobbermain
                         playerOne.AddCorrect();
 
                     }
+
+                    Console.WriteLine();
+                    Console.WriteLine(ListQuestions.q6.GetQuestion());
+                    Console.WriteLine(ListQuestions.q6.GetAnswers());
+
+
+
+                    int answer_six;
+
+                    while (!int.TryParse(Console.ReadLine(), out answer_six)
+                    || answer_six <= 0 || answer_six > 5)
+                    {
+                        Console.WriteLine("Error, please enter the a valid number!");
+                    }
+
+                    if (answer_six == 1 || answer_six == 2 || answer_six == 4)
+                    {
+                        Console.WriteLine("Incorrect! The answer was Crops and Materials");
+                        Console.WriteLine("On to the next question . . .");
+                        playerOne.GetCurrentScore();
+                    }
+                    else if (answer_six == 3)
+                    {
+                        Console.WriteLine("Correct! The answer is Crops and Materials");
+                        Console.WriteLine("Next question.");
+                        playerOne.AddCorrect();
+
+                    }
+
+
+
+                    Console.WriteLine();
+                    Console.WriteLine(ListQuestions.q7.GetQuestion());
+                    Console.WriteLine(ListQuestions.q7.GetAnswers());
+
+
+
+                    int answer_seven;
+
+                    while (!int.TryParse(Console.ReadLine(), out answer_seven)
+                    || answer_seven <= 0 || answer_seven > 5)
+                    {
+                        Console.WriteLine("Error, please enter the a valid number!");
+                    }
+
+                    if (answer_seven == 1 || answer_seven == 2 || answer_seven == 4)
+                    {
+                        Console.WriteLine("Incorrect! The answer was Sheik");
+                        Console.WriteLine("On to the next question . . .");
+                        playerOne.GetCurrentScore();
+                    }
+                    else if (answer_seven == 3)
+                    {
+                        Console.WriteLine("Correct! The answer is Sheik");
+                        Console.WriteLine("Next question.");
+                        playerOne.AddCorrect();
+
+                    }
+
+                    Console.WriteLine();
+                    Console.WriteLine(ListQuestions.q7.GetQuestion());
+                    Console.WriteLine(ListQuestions.q7.GetAnswers());
+
+
+
+                    int answer_eight;
+
+                    while (!int.TryParse(Console.ReadLine(), out answer_eight)
+                    || answer_eight <= 0 || answer_eight > 5)
+                    {
+                        Console.WriteLine("Error, please enter the a valid number!");
+                    }
+
+                    if (answer_eight == 1 || answer_eight == 2 || answer_eight == 4)
+                    {
+                        Console.WriteLine("Incorrect! The answer was Minecraft");
+                        Console.WriteLine("On to the next question . . .");
+                        playerOne.GetCurrentScore();
+                    }
+                    else if (answer_eight == 3)
+                    {
+                        Console.WriteLine("Correct! The answer is Minecraft");
+                        Console.WriteLine("Next question.");
+                        playerOne.AddCorrect();
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     Console.WriteLine($"Your score is {playerOne.GetCurrentScore()}");
                 }

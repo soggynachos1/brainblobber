@@ -50,7 +50,58 @@ namespace brainblobbermain
            2
            );
 
-        
+        public static Question q6 = new Question(
+         3,
+         Question.Topics.VideoGames,
+          "What is the main resource players must collect in Stardew Valley?" ,
+          new List<string> { "1: Copper and Diamonds ", "2: Tacos and burgers", "3: Dragons and rocks ", "4: Crops and Materials" },
+         3
+         );
+
+        public static Question q7 = new Question(
+        0,
+        Question.Topics.VideoGames,
+         "In The Legend of Zelda: Ocarina of Time, what is Zelda’s alter ego?",
+         new List<string> { "1: Sheik ", "2: Bleik", "3: Danaerys", "4: Ragnor " },
+        0
+        );
+
+
+        public static Question q8 = new Question(
+        3,
+        Question.Topics.VideoGames,
+         "What is the best selling video games of all the time, with 176 " +
+            "billon copies sold?",
+         new List<string> { "1: Elden Ring", "2: Call of Duty", "3: Grand Theft Auto (GTA)","4: Minecraft" },
+        3
+        );
+
+
+        public static Question q9 = new Question(
+        0,
+        Question.Topics.VideoGames,
+         "What was the first video game ever sold in 1972?",
+         new List<string> { "1:Magnavox Odyssey", "2:Nintendo Gameboy", "3:Nintendo 64", "4: Playstation 1" },
+        0
+        );
+
+
+        public static Question q10 = new Question(
+        1,
+        Question.Topics.VideoGames,
+         "What is the giant tree called in Elden Ring?",
+         new List<string> { "1:The Holy Tree", "2: Elden Tree", "3:Ancient Tree ", "4: Old wise tree" },
+        1
+        );
+
+
+
+
+
+
+
+
+
 
     }
 }
