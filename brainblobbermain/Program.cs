@@ -28,10 +28,7 @@ namespace brainblobbermain
         public static void Main(string[] args)
         {
             int choice;
-            bool chooseAnother = true;
-            while (chooseAnother)
-            {
-
+           
 
                 string soloButtonStart = "Welcome to BrainBlobber - Solo Mode!";
                 Console.WriteLine(soloButtonStart);
@@ -91,9 +88,6 @@ namespace brainblobbermain
                         playerOne.AddCorrect();
 
                     }
-
-
-
 
                     Console.WriteLine();
                     Console.WriteLine(ListQuestions.q2.GetQuestion());
@@ -219,21 +213,19 @@ namespace brainblobbermain
                         Console.WriteLine("Error, please enter the a valid number!");
                     }
 
-                    if (answer_six == 1 || answer_six == 2 || answer_six == 4)
+                    if (answer_six == 1 || answer_six == 2 || answer_six == 3)
                     {
                         Console.WriteLine("Incorrect! The answer was Crops and Materials");
                         Console.WriteLine("On to the next question . . .");
                         playerOne.GetCurrentScore();
                     }
-                    else if (answer_six == 3)
+                    else if (answer_six == 4)
                     {
                         Console.WriteLine("Correct! The answer is Crops and Materials");
                         Console.WriteLine("Next question.");
                         playerOne.AddCorrect();
 
                     }
-
-
 
                     Console.WriteLine();
                     Console.WriteLine(ListQuestions.q7.GetQuestion());
@@ -249,13 +241,13 @@ namespace brainblobbermain
                         Console.WriteLine("Error, please enter the a valid number!");
                     }
 
-                    if (answer_seven == 1 || answer_seven == 2 || answer_seven == 4)
+                    if (answer_seven == 3 || answer_seven == 2 || answer_seven == 4)
                     {
                         Console.WriteLine("Incorrect! The answer was Sheik");
                         Console.WriteLine("On to the next question . . .");
                         playerOne.GetCurrentScore();
                     }
-                    else if (answer_seven == 3)
+                    else if (answer_seven == 1)
                     {
                         Console.WriteLine("Correct! The answer is Sheik");
                         Console.WriteLine("Next question.");
@@ -264,8 +256,8 @@ namespace brainblobbermain
                     }
 
                     Console.WriteLine();
-                    Console.WriteLine(ListQuestions.q7.GetQuestion());
-                    Console.WriteLine(ListQuestions.q7.GetAnswers());
+                    Console.WriteLine(ListQuestions.q8.GetQuestion());
+                    Console.WriteLine(ListQuestions.q8.GetAnswers());
 
 
 
@@ -277,13 +269,13 @@ namespace brainblobbermain
                         Console.WriteLine("Error, please enter the a valid number!");
                     }
 
-                    if (answer_eight == 1 || answer_eight == 2 || answer_eight == 4)
+                    if (answer_eight == 1 || answer_eight == 2 || answer_eight == 3)
                     {
                         Console.WriteLine("Incorrect! The answer was Minecraft");
                         Console.WriteLine("On to the next question . . .");
                         playerOne.GetCurrentScore();
                     }
-                    else if (answer_eight == 3)
+                    else if (answer_eight == 4)
                     {
                         Console.WriteLine("Correct! The answer is Minecraft");
                         Console.WriteLine("Next question.");
@@ -291,28 +283,68 @@ namespace brainblobbermain
 
                     }
 
+                    Console.WriteLine();
+                    Console.WriteLine(ListQuestions.q9.GetQuestion());
+                    Console.WriteLine(ListQuestions.q9.GetAnswers());
 
 
 
+                    int answer_nine;
+
+                    while (!int.TryParse(Console.ReadLine(), out answer_nine)
+                    || answer_nine <= 0 || answer_nine > 5)
+                    {
+                        Console.WriteLine("Error, please enter the a valid number!");
+                    }
+
+                    if (answer_nine == 3 || answer_nine == 2 || answer_nine == 4)
+                    {
+                        Console.WriteLine("Incorrect! The answer was Magnavox Odyssey ");
+                        Console.WriteLine("On to the next question . . .");
+                        playerOne.GetCurrentScore();
+                    }
+                    else if (answer_nine == 1)
+                    {
+                        Console.WriteLine("Correct! The answer is Magnavox Odyssey");
+                        Console.WriteLine("Next question.");
+                        playerOne.AddCorrect();
 
 
+                        Console.WriteLine();
+                        Console.WriteLine(ListQuestions.q10.GetQuestion());
+                        Console.WriteLine(ListQuestions.q10.GetAnswers());
 
 
+                        int answer_ten;
 
+                        while (!int.TryParse(Console.ReadLine(), out answer_ten)
+                        || answer_ten <= 0 || answer_ten > 5)
+                        {
+                            Console.WriteLine("Error, please enter the a valid number!");
+                        }
 
+                        if (answer_ten == 3 || answer_ten == 1 || answer_ten == 4)
+                        {
+                            Console.WriteLine("Incorrect! The answer was Elden Tree ");
+                            Console.WriteLine("On to the next question . . .");
+                            playerOne.GetCurrentScore();
+                        }
+                        else if (answer_ten == 2)
+                        {
+                            Console.WriteLine("Correct! The answer is Elden Tree");
+                            playerOne.AddCorrect();
 
+                            Console.WriteLine($"Your score is {playerOne.GetCurrentScore()}");
+                        }
 
-
-
-
-                    Console.WriteLine($"Your score is {playerOne.GetCurrentScore()}");
+                    }
                 }
 
-            }
         }
-
     }
-}
+
+ }
+
 
 
  

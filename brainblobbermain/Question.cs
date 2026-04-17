@@ -87,7 +87,7 @@ namespace brainblobbermain
         //listed enum topics
         public enum Topics 
         {
-            VideoGames = 1, PopCulture = 2, Music = 3, SuperHeroes = 4, Movies_TVshows = 5, Math = 6
+            VideoGames = 1, PopCulture = 2, Music = 3, SuperHeroes = 4, Movies = 5, TVShows = 6
 
         }
 
